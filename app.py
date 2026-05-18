@@ -105,9 +105,7 @@ class App:
                                 self.__computer_ships.delete_ship_from_ship_list(ship)
                                 print(len(self.__computer_ships))
 
-                                if len(self.__computer_ships) == 0:
-                                    App.GAME_IS_RUNNING = False
-                                    self.__label_upper.config(text="GAME OVER: YOU WIN!", fg="green")
+                                if len(self.__computer_ships) == 0
                                     messagebox.showinfo(title='Game over', message='You have won!!!')
                                     return
                             else:
@@ -166,7 +164,6 @@ class App:
 
                                 if len(self.__player_ships) == 0:
                                     App.GAME_IS_RUNNING = False
-                                    self.__label_upper.config(text="GAME OVER: COMPUTER WINS!", fg="red")
                                     messagebox.showinfo(title='Game over', message='You have lost(((')
                                     return
                             else:
